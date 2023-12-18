@@ -50,4 +50,10 @@ public class EJ1 {
         arraysIguales = Arrays.equals(arrayDoubles, copiaArrayDoubles);
         System.out.println(arraysIguales);
     }
+    public static int[] rellenaArray(int[] array){
+        Random random = new Random();
+        for(int i : array){
+            array[i]=random.nextInt(10, 101);
+        }
+    }
 }
